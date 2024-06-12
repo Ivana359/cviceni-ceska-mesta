@@ -1,0 +1,55 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.city-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 16px;
+    max-width: 320px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    cursor: pointer; 
+}
+
+.city-card:hover {
+    transform: scale(1.05); 
+    background-color: #f0f0f0; 
+}
+
+.city-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.city-info {
+    padding: 16px;
+    text-align: center;
+}
+
+.city-name {
+    font-size: 24px;
+    color: #333;
+    margin: 0 0 8px 0;
+}
+
+.city-population,
+.city-area,
+.city-district {
+    font-size: 16px;
+    color: #666;
+    margin: 4px 0;
+}
+
+.city-info strong {
+    color: #444;
+}
